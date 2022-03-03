@@ -1,6 +1,6 @@
-import stub from './stub';
+import * as commonjs from './commonjs.cjs';
+import * as ecmaModule from './module.mjs';
+import * as typescript from './typescript';
 
 
-export {
-	stub,
-};
+export default typescript.stubTs || commonjs.stubCjs || ecmaModule.stubMjs;

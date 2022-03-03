@@ -1,5 +1,5 @@
 {
 	"extends": [
-		"@zekfad"
+		"@zekfad/eslint-config/typescript"
 	]
 }

@@ -8,5 +8,7 @@
 		"declaration": true,
 		"emitDeclarationOnly": true,
 		"outDir": "types",
+		"esModuleInterop": true,
+		"moduleResolution": "Node",
 	},
 }

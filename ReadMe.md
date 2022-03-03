@@ -12,9 +12,16 @@ Features presented in this stub:
 * ESLint.
 * Babel.
 * Terser.
-* ESM and CommonJS input and output.
-* TypeScript declarations generation.
+* TypeScript support.
+* ESM and CommonJS output.
+* TypeScript declaration generation.
 * Docs generation.
+
+## Note
+
+Though you can import CommonJS files, it's highly recommended to use ESM
+modules with `.js` extension and TypeScript. Otherwise declaration 
+generation can produce broken declarations.
 
 ## Install
 

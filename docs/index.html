@@ -36,7 +36,7 @@
         <ul></ul>
     </div>
     
-    <div class="lnb-api hidden"><h3>Global</h3><ul><li><a href="global.html#stub">stub</a></li></ul></div>
+    
 </nav>
 <div id="resizer"></div>
 
@@ -68,10 +68,15 @@
 <li>ESLint.</li>
 <li>Babel.</li>
 <li>Terser.</li>
-<li>ESM and CommonJS input and output.</li>
-<li>TypeScript declarations generation.</li>
+<li>TypeScript support.</li>
+<li>ESM and CommonJS output.</li>
+<li>TypeScript declaration generation.</li>
 <li>Docs generation.</li>
 </ul>
+<h2>Note</h2>
+<p>Though you can import CommonJS files, it's highly recommended to use ESM
+modules with <code>.js</code> extension and TypeScript. Otherwise declaration
+generation can produce broken declarations.</p>
 <h2>Install</h2>
 <p>Install via yarn:</p>
 <pre class="prettyprint source"><code>yarn add stub

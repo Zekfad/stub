@@ -9,6 +9,7 @@ import { babel, } from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
 import resolve from '@rollup/plugin-node-resolve';
+import typescript from '@rollup/plugin-typescript';
 import { terser, } from 'rollup-plugin-terser';
 
 
@@ -35,7 +36,13 @@ plugins.push(...[
 	}),
 	json(),
 	resolve({
+		extensions: [
+			'.mjs', '.js', '.cjs', '.json', '.node',
+		],
 		preferBuiltins: true,
+	}),
+	typescript({
+		noEmitOnError: true,
 	}),
 	commonjs(),
 ]);

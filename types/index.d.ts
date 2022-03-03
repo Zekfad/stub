@@ -1,2 +1,2 @@
-export { stub };
-import stub from "./stub";
+declare var _default: any;
+export default _default;
