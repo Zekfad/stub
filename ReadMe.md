@@ -15,7 +15,7 @@ Features presented in this stub:
 * TypeScript support.
 * ESM and CommonJS output.
 * TypeScript declaration generation.
-* Docs generation.
+* JSDoc generation.
 
 ## Note
 
