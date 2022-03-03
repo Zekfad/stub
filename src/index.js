@@ -3,4 +3,4 @@ import * as ecmaModule from './module.mjs';
 import * as typescript from './typescript';
 
 
-export default typescript.stubTs || commonjs.stubCjs || ecmaModule.stubMjs;
+export const stub = typescript.stubTs || commonjs.stubCjs || ecmaModule.stubMjs;
