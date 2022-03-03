@@ -7,6 +7,7 @@ const
 		'.js',
 		'.mjs',
 		'.cjs',
+		'.ts',
 	],
 
 	eslint = new ESLint({
