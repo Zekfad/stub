@@ -5,11 +5,13 @@
 	},
 	"source": {
 		"include": [ ".", "package.json", "ReadMe.md" ],
-		"includePattern": "src.*\\.js$",
+		"includePattern": "src.*\\.(js|ts|mjs|cjs)$",
 		"excludePattern": "(node_modules|docs|test|dist|rollup.config.js)"
 	},
 	"plugins": [
-		"plugins/markdown"
+		"plugins/markdown",
+		"node_modules/better-docs/typescript",
+		"node_modules/better-docs/category"
 	],
 	"templates": {
 		"name": "stub",
@@ -27,6 +29,6 @@
 		"encoding": "utf8",
 		"private": true,
 		"recurse": true,
-		"template": "./node_modules/tui-jsdoc-template"
+		"template": "./node_modules/clean-jsdoc-theme"
 	}
 }
